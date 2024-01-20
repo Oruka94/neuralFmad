@@ -15,11 +15,11 @@ Download `checkpoint`of ArcFace following instruction of ArcFace
 ## Prepare data
 Run `align_faces.py`to align data. This creates 2 folders `fereta_aligned` and `feretb_aligned`, which include different images of the same people. Move them to `./data`
 ## Testing morphing and demorphing
-To gather comprehensive statistics for the entire dataset, use `p2s2p_feret_batch.py`. The morphing process runs on `fereta`, and demorphing is performed on the `morphed data` and `feretb`. By default, the resulting morphed images will be stored in `./data/morphed_fa`, and demorphed images will be saved in `./data/demorphed_fb`.
+- To gather comprehensive statistics for the entire dataset, use `p2s2p_feret_batch.py`. The morphing process runs on `fereta`, and demorphing is performed on the `morphed data` and `feretb`. By default, the resulting morphed images will be stored in `./data/morphed_fa`, and demorphed images will be saved in `./data/demorphed_fb`.
 
 Additionally, a table containing the ArcFace cosine similarity scores will be saved to a `statistic_results.csv` file.
 
-For a quick single example test, execute `p2s2p_feret_single.py`. 
+- For a quick single example test, execute `p2s2p_feret_single.py`. 
 
 `python p2s2p_feret_single.py label_of_person number_accomplices_ list_alpha_for_morphing_and_demorphing `
 
